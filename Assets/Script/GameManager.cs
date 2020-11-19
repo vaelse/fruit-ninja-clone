@@ -128,12 +128,6 @@ public class GameManager : MonoBehaviour
             IKS.SetActive(false);
         }
     }
-
-    public void SoundSlice()
-    {
-        AudioClip random = SliceSound;
-        audioSource.PlayOneShot(random);
-    }
 }
 
 

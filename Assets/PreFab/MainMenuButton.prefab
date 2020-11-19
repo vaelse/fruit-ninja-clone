@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4207906979824816268}
   - component: {fileID: 4207906979824816269}
   - component: {fileID: 4207906979824816270}
-  - component: {fileID: 4207906979824816271}
+  - component: {fileID: 2327705779968397470}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4207906979824816271}
+      - m_Target: {fileID: 2327705779968397470, guid: 31f66303ec5572445b3df4b90eaead01,
+          type: 3}
         m_MethodName: OnButtonPress
         m_Mode: 3
         m_Arguments:
@@ -130,7 +131,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &4207906979824816271
+--- !u!114 &2327705779968397470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4207906979824816265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3eada5f07aa69847943c3f149a04400, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b99f664c0a86994f9758215db7f0184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4207906980346899692
