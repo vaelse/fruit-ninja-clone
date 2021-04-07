@@ -23,30 +23,22 @@ public class GameManager : MonoBehaviour
     public GameObject[] XImages;
     [Header("Audio")]
     public AudioClip SliceSound;
-    private AudioSource audioSource;
 
     public string GetCurrentScene()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string SceneName = currentScene.name;
-        return SceneName;
+        return SceneManager.GetActiveScene().name;
     }
 
     private void Awake()
     {
-        string SceneName = GetCurrentScene();
+        var SceneName = GetCurrentScene();
         highscore = PlayerPrefs.GetInt("HighScore");
         highscoreSV = PlayerPrefs.GetInt("HighScoreSurvival");
         if (SceneName == "TimeMode")
-        {
             HighScore.text = "Best: " + highscore;
-        }
         else if (SceneName == "SurvivalMode")
-        {
             HighScoreSV.text = "Best: " + highscoreSV;
-        }
      
-        audioSource = GetComponent<AudioSource>();
         LossPoints = 0;
     }
 
@@ -106,7 +98,7 @@ public class GameManager : MonoBehaviour
    
     public void OnBombHitSurvival()
     {
-        GameObject LossImages = XImages[LossPoints];
+        var LossImages = XImages[LossPoints];
         LossPoints++;   
         LossImages.SetActive(true);
     }
@@ -119,15 +111,11 @@ public class GameManager : MonoBehaviour
         LossPoints = 0;
         Time.timeScale = 1;
         GameOverPanel.SetActive(false);
-        foreach(GameObject g in GameObject.FindGameObjectsWithTag("Cutable"))
-        {
+
+        foreach(var g in GameObject.FindGameObjectsWithTag("Cutable"))
             Destroy(g);
-        }  
-        foreach(GameObject IKS in XImages)
-        {
-            IKS.SetActive(false);
-        }
+
+        foreach(var xImage in XImages)
+            xImage.SetActive(false);
     }
 }
-
-

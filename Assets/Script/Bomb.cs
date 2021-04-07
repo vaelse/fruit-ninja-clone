@@ -5,21 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Bomb : MonoBehaviour
 {
-
     public ParticleSystem explosion;
-  
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string SceneName = FindObjectOfType<GameManager>().GetCurrentScene();
-
-        blade b = collision.GetComponent<blade>();
-
-        if (!b)
-        {
-            return;
-        }
+        var SceneName = FindObjectOfType<GameManager>().GetCurrentScene();
 
         if(SceneName == "TimeMode")
         {

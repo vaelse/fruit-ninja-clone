@@ -21,6 +21,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &7699503081371609793
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527809627968557067}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0009793573, y: 0.00004145362}
+  serializedVersion: 2
+  m_Radius: 0.006355017
 --- !u!114 &3327385877151951275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,22 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlicedFruit: {fileID: 8166822243024046818, guid: 84f2b93b656ef5149a9751f323537e9b,
     type: 3}
---- !u!58 &7699503081371609793
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527809627968557067}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0009793573, y: 0.00004145362}
-  serializedVersion: 2
-  m_Radius: 0.006355017
 --- !u!1001 &7527809627968591531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,8 +63,28 @@ PrefabInstance:
       value: Banana
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
       propertyPath: m_TagString
       value: Cutable
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79,6 +99,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.5
       objectReference: {fileID: 0}
@@ -91,14 +115,6 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.50000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -109,18 +125,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34ce20e6e81ec674ea8fff3639b50279, type: 3}
